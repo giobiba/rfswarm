@@ -52,7 +52,7 @@ When you select a robot script, the Manager considers the directory this robot f
 So the following happens on the Manager when a robot file is selected:
 - The Manager does a md5 hash of the file, this hash is used as the key to reference the file from now on.
 - The selected robot file is given a relative path of just the file name of the robot file.
-- The the scenario file list in the Manager is updated with the the hash and the local and relative paths as properties of the hash.
+- The scenario file list in the Manager is updated with the the hash and the local and relative paths as properties of the hash.
 - The Manager then scans the robot file looking for resource and variable files (support files), for each file found:
 	- The support file's relative path and local paths are determined.
 	- The Manager does a md5 hash of the support file (Again this hash is used as the key to reference this support file from now on)
